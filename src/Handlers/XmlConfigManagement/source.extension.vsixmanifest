@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Contoso.Samples.ConnectedServices.XmlConfigManagement.e30335d6-f8c7-4d07-b66b-f011f3f19478" Version="1.0" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Connected Service Sample Update Xml Config</DisplayName>
+    <Description xml:space="preserve">A sample for building a Connected Service Provider, adding/editing the config file</Description>
+    <Icon>Resources\ExtensionIcon.png</Icon>
+    <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
+    <Tags>Connected Services</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="14.0" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+    <Dependency d:Source="Installed" Id="ConnectedServices.B3144AF8-5B8F-491C-9ACA-996350E8FE95" DisplayName="Microsoft Connected Services" Version="[2.0.50121.2,3.0)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+  </Assets>
+</PackageManifest>

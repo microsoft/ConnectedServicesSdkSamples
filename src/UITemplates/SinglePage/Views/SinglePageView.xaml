@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="Contoso.Samples.ConnectedServices.UITemplates.SinglePage.Views.SinglePageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:Contoso.Samples.ConnectedServices.UITemplates.SinglePage.ViewModels"
+             d:DataContext="{d:DesignInstance Type=viewModels:SinglePageViewModel}"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Background="Black">
+            <Label Foreground="White" HorizontalAlignment="Center" FontSize="24">View: Provider Content</Label>
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="White">Up to the provider to set any content they'd like for service configuration</TextBlock>
+    </StackPanel>
+</UserControl>
