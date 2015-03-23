@@ -286,6 +286,9 @@
             Gets the unique Provider ID for the provider/handler.  This is used to match
             a provider with its handlers.
             </summary>
+            <remarks>
+            The recommended Provider ID format is:  [Service Company].[Service].[SubService]
+            </remarks>
         </member>
         <member name="P:Microsoft.VisualStudio.ConnectedServices.ConnectedServiceProviderExportAttribute.SupportsUpdate">
             <summary>
@@ -1147,6 +1150,11 @@
             Gets the collection of pages in the wizard.  Each page is a “step” in the wizard.
             </summary>
         </member>
+        <member name="M:Microsoft.VisualStudio.ConnectedServices.ConnectedServiceWizard.Pages_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Hooks up the Page's Wizard property with the current Wizard instance.
+            </summary>
+        </member>
         <member name="P:Microsoft.VisualStudio.ConnectedServices.ConnectedServiceWizard.IsPreviousEnabled">
             <summary>
             Gets or sets a value indicating whether the Previous button is enabled.
@@ -1360,13 +1368,10 @@
             Represents a page, or step, in a wizard.
             </summary>
         </member>
-        <member name="M:Microsoft.VisualStudio.ConnectedServices.ConnectedServiceWizardPage.#ctor(Microsoft.VisualStudio.ConnectedServices.ConnectedServiceWizard)">
+        <member name="M:Microsoft.VisualStudio.ConnectedServices.ConnectedServiceWizardPage.#ctor">
             <summary>
             Initializes a new instance of the ConnectedServiceWizardPage class.
             </summary>
-            <param name="wizard">
-            The parent ConnectedServiceWizard view model that contains this page.
-            </param>
         </member>
         <member name="P:Microsoft.VisualStudio.ConnectedServices.ConnectedServiceWizardPage.Wizard">
             <summary>

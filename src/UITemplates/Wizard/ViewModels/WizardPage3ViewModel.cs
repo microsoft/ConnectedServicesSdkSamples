@@ -4,7 +4,7 @@ namespace Contoso.Samples.ConnectedServices.UITemplates.Wizard.ViewModels
 {
     internal class WizardPage3ViewModel : ConnectedServiceWizardPage
     {
-        public WizardPage3ViewModel(ServiceWizard wizard) : base(wizard)
+        public WizardPage3ViewModel()
         {
             this.Title = "Page 3";
             this.Description = "Page 3 Description";

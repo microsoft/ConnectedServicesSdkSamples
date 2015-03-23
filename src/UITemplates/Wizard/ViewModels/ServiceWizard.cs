@@ -8,9 +8,9 @@ namespace Contoso.Samples.ConnectedServices.UITemplates.Wizard.ViewModels
         public ServiceWizard()
         {
             // Add the ViewModels that represent the pages of the wizard
-            this.Pages.Add(new ViewModels.WizardPage1ViewModel(this));
-            this.Pages.Add(new ViewModels.WizardPage2ViewModel(this));
-            this.Pages.Add(new ViewModels.WizardPage3ViewModel(this));
+            this.Pages.Add(new ViewModels.WizardPage1ViewModel());
+            this.Pages.Add(new ViewModels.WizardPage2ViewModel());
+            this.Pages.Add(new ViewModels.WizardPage3ViewModel());
         }
         public override Task<ConnectedServiceInstance> GetFinishedServiceInstanceAsync()
         {
