@@ -51,7 +51,7 @@ namespace Contoso.Samples.ConnectedServices.ProgressIndicators.ViewModels
         }
 
         /// <summary>
-        /// Do some long running operation, using the BusyIndicator to reprot progress
+        /// Do some long running operation, using the BusyIndicator to report progress
         /// </summary>
         /// <returns></returns>
         public async Task PerformLongTask()
