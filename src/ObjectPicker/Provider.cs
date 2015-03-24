@@ -26,10 +26,11 @@ namespace Contoso.Samples.ConnectedServices
 
         public override Task<ConnectedServiceConfigurator> CreateConfiguratorAsync(ConnectedServiceProviderContext context)
         {
-            ConnectedServiceConfigurator configurator = new SinglePageViewModel();
-            ((SinglePageViewModel)(configurator)).Context = context;
+            SinglePageViewModel configurator = new SinglePageViewModel();
+            configurator.Context = context;
 
-            return Task.FromResult(configurator);
+            return Task.FromResult(configurator as ConnectedServiceConfigurator);
+
         }
     }
 }

@@ -17,8 +17,6 @@ namespace Contoso.Samples.ConnectedServices.ViewModels
         private ObservableCollection<ObjectPickerCategory> categories;
         private string errorMessage;
 
-        public ConnectedServiceProviderContext Context { get; set; }
-
         public SinglePageViewModel()
         {
             this.categories = new ObservableCollection<ObjectPickerCategory>();
@@ -27,6 +25,11 @@ namespace Contoso.Samples.ConnectedServices.ViewModels
             this.IsFinishEnabled = true;
             this.View = new SinglePageView(this);
         }
+
+        /// <summary>
+        /// Access to the Context for config, progress and logging APIs
+        /// </summary>
+        public ConnectedServiceProviderContext Context { get; set; }
 
         /// <summary>
         /// Gets the top level categories that appear within the object picker control.

@@ -33,12 +33,9 @@ namespace Contoso.Samples.ConnectedServices.UpdateSupport
         {
             // See Handler samples for examples of how to work with the project system 
             await context.Logger.WriteMessageAsync(LoggerMessageCategory.Information, "Handler Invoked to Update Project Artifacts");
-
-            return new UpdateServiceInstanceResult()
-            {
-                // ensure the GettingStartedUrl is up to date
-                GettingStartedDocument = new GettingStartedDocument(new Uri(Handler.GettingStartedUrl))
-            };
+            UpdateServiceInstanceResult updateResult = new UpdateServiceInstanceResult();
+            updateResult.GettingStartedDocument = new GettingStartedDocument(new Uri(Handler.GettingStartedUrl));
+            return updateResult;
         }
     }
 }

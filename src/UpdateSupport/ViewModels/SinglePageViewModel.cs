@@ -8,7 +8,7 @@ namespace Contoso.Samples.ConnectedServices.UpdateSupport.ViewModels
     {
         private string serviceName;
         private string extraInformation;
-        public ConnectedServiceProviderContext  Context { get; set; }
+
         public SinglePageViewModel()
         {
             this.Title = "Samples";
@@ -20,6 +20,11 @@ namespace Contoso.Samples.ConnectedServices.UpdateSupport.ViewModels
             this.ExtraInformation = "Default Extra Information";
 
         }
+
+        /// <summary>
+        /// Access to the Context for config, progress and logging APIs
+        /// </summary>
+        public ConnectedServiceProviderContext Context { get; set; }
 
         /// <summary>
         /// Complete initializing after the context is set
