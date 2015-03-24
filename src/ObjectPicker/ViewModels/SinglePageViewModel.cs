@@ -14,13 +14,13 @@ namespace Contoso.Samples.ConnectedServices.ViewModels
     /// </summary>
     internal class SinglePageViewModel : ConnectedServiceSinglePage
     {
-        private ConnectedServiceProviderContext context;
         private ObservableCollection<ObjectPickerCategory> categories;
         private string errorMessage;
 
-        public SinglePageViewModel(ConnectedServiceProviderContext context)
+        public ConnectedServiceProviderContext Context { get; set; }
+
+        public SinglePageViewModel()
         {
-            this.context = context;
             this.categories = new ObservableCollection<ObjectPickerCategory>();
             this.Title = "Object Picker Sample";
             this.Description = "A sample provider that demonstrates an object picker control";
@@ -56,7 +56,7 @@ namespace Contoso.Samples.ConnectedServices.ViewModels
         /// </summary>
         public async Task LoadObjectsAsync()
         {
-            using (this.context.StartBusyIndicator("Loading Objects..."))
+            using (this.Context.StartBusyIndicator("Loading Objects..."))
             {
                 await Task.Delay(2000);  // A delay that illustrates the progress indicator functionality.
 

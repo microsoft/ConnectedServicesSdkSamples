@@ -6,11 +6,10 @@ namespace Contoso.Samples.ConnectedServices.UpdateSupport.ViewModels
 {
     internal class SinglePageViewModel : ConnectedServiceSinglePage
     {
-        private ConnectedServiceProviderContext context;
         private string serviceName;
         private string extraInformation;
-
-        public SinglePageViewModel(ConnectedServiceProviderContext context)
+        public ConnectedServiceProviderContext  Context { get; set; }
+        public SinglePageViewModel()
         {
             this.Title = "Samples";
             this.Description = "Updating a Connected Service";
@@ -20,11 +19,17 @@ namespace Contoso.Samples.ConnectedServices.UpdateSupport.ViewModels
             this.ServiceName = "SampleService";
             this.ExtraInformation = "Default Extra Information";
 
-            this.context = context;
-            if (this.context.IsUpdating)
+        }
+
+        /// <summary>
+        /// Complete initializing after the context is set
+        /// </summary>
+        internal void Initialize()
+        {
+            if (this.Context.IsUpdating)
             {
-                this.ServiceName = this.context.UpdateContext.ServiceFolder.Text;
-                DesignerData designerData = this.context.GetExtendedDesignerData<DesignerData>();
+                this.ServiceName = this.Context.UpdateContext.ServiceFolder.Text;
+                DesignerData designerData = this.Context.GetExtendedDesignerData<DesignerData>();
                 if (designerData != null)
                 {
                     this.ExtraInformation = designerData.ExtraInformation;
@@ -54,7 +59,7 @@ namespace Contoso.Samples.ConnectedServices.UpdateSupport.ViewModels
             get
             {
                 // disable editing of ServiceName if an existing service is being updated
-                return !this.context.IsUpdating;
+                return !this.Context.IsUpdating;
             }
         }
 
@@ -98,7 +103,7 @@ namespace Contoso.Samples.ConnectedServices.UpdateSupport.ViewModels
             instance.Metadata.Add("ExtraInfo", this.ExtraInformation);
 
             // store some extra designer data, so it can be read back during update
-            this.context.SetExtendedDesignerData(new DesignerData() { ExtraInformation = this.ExtraInformation });
+            this.Context.SetExtendedDesignerData(new DesignerData() { ExtraInformation = this.ExtraInformation });
 
             return Task.FromResult(instance);
         }
