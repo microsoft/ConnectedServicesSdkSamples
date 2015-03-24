@@ -22,12 +22,9 @@ namespace Contoso.Samples.ConnectedServices.ProgressIndicators
             this.MoreInfoUri = new Uri("http://Microsoft.com");
         }
 
-        //TODO: Move context to ConnectedServiceConfigurator, remove from CreateConfiguratorAsync to improve programming model, 
-        // and support WPF default constructors for intellisense and WYSIWYG designers
         public override Task<ConnectedServiceConfigurator> CreateConfiguratorAsync(ConnectedServiceProviderContext context)
         {
             ConnectedServiceConfigurator configurator = new SinglePageViewModel();
-            //TODO: Move context to ConnectedServiceConfigurator
             ((SinglePageViewModel)(configurator)).Context = context;
 
             return Task.FromResult(configurator);

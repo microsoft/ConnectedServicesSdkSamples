@@ -8,14 +8,15 @@ namespace Contoso.Samples.ConnectedServices.ProgressIndicators.ViewModels
     {
         private bool isValidatingAuth = false;
         private bool isPerformingLongTask = false;
-        //TODO: Move Context to ConnectedServiceConfigurator
         public ConnectedServiceProviderContext Context { get; set; }
+
         public SinglePageViewModel()
         {
             this.Title = "Samples";
             this.Description = "Demo of the Connected Service busy indicator, and a contextual busy indicator";
             this.View = new SinglePageView(this);
         }
+
         /// <summary>
         /// Auth might be a place where you want to show general progress. 
         /// </summary>
@@ -27,7 +28,7 @@ namespace Contoso.Samples.ConnectedServices.ProgressIndicators.ViewModels
                 if (isValidatingAuth != value)
                 {
                     isValidatingAuth = value;
-                    this.OnPropertyChanged("IsValidatingAuth");
+                    this.OnPropertyChanged();
                 }
             }
         }
@@ -44,10 +45,15 @@ namespace Contoso.Samples.ConnectedServices.ProgressIndicators.ViewModels
                 if (isPerformingLongTask != value)
                 {
                     isPerformingLongTask = value;
-                    this.OnPropertyChanged("IsPerformingLongTask");
+                    this.OnPropertyChanged();
                 }
             }
         }
+
+        /// <summary>
+        /// Do some long running operation, using the BusyIndicator to reprot progress
+        /// </summary>
+        /// <returns></returns>
         public async Task PerformLongTask()
         {
             // To get access to the BusyIndicator in the base ConnectedServices UI, call the StartBusyIndicator() method, passing in the text to display
@@ -72,7 +78,7 @@ namespace Contoso.Samples.ConnectedServices.ProgressIndicators.ViewModels
         public override Task<ConnectedServiceInstance> GetFinishedServiceInstanceAsync()
         {
             ConnectedServiceInstance instance = new ConnectedServiceInstance();
-
+            instance.Name = "ProgressIndicatorSample";
             return Task.FromResult(instance);
         }
     }
