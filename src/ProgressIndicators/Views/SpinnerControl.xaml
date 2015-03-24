@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="Contoso.Samples.ConnectedServices.ProgressIndicators.Views.SpinnerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
+             Margin="20,0,0,0">
+
+    <UserControl.Resources>
+        <ResourceDictionary >
+            <BooleanToVisibilityConverter x:Key="BoolToVis" />
+            <Style x:Key="SpinnerEllipseStyle" TargetType="{x:Type Ellipse}">
+                <Setter Property="Width" Value="3.6392" />
+                <Setter Property="Height" Value="3.6437" />
+                <Setter Property="Stretch" Value="Fill" />
+                <Setter Property="Fill" Value="{DynamicResource {x:Static ui:ProgressBarColors.IndicatorFillBrushKey}}" />
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Canvas Grid.Column="0" RenderTransformOrigin="0.5,0.5" Width="20" Height="20">
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="3.3616" Canvas.Top="1.62726" Opacity="0.901962" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="0.478027" Canvas.Top="4.99302" Opacity="0.803922" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="0" Canvas.Top="9.655687" Opacity="0.701961" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="2.02005" Canvas.Top="13.88605" Opacity="0.603922" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="6.09098" Canvas.Top="16.35633" Opacity="0.501961" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="10.77872" Canvas.Top="16.14018" Opacity="0.403922" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="14.60293" Canvas.Top="13.54638" Opacity="0.301961" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="16.36083" Canvas.Top="9.069" Opacity="0.203922" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="15.4973" Canvas.Top="4.49897" Opacity="0.101961" />
+        <Ellipse Style="{StaticResource SpinnerEllipseStyle}" Canvas.Left="7.87972" Canvas.Top="0.08333" Opacity="1.0" />
+        <Canvas.RenderTransform>
+            <RotateTransform x:Name="spinnerRotate" Angle="0" />
+        </Canvas.RenderTransform>
+        <Canvas.Triggers>
+            <EventTrigger RoutedEvent="Canvas.Loaded">
+                <BeginStoryboard >
+                    <Storyboard >
+                        <DoubleAnimation 
+                            Storyboard.TargetName="spinnerRotate" 
+                            Storyboard.TargetProperty="(RotateTransform.Angle)" 
+                            From="0" 
+                            To="360" 
+                            Duration="0:0:01" 
+                            RepeatBehavior="Forever" />
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+        </Canvas.Triggers>
+    </Canvas>
+</UserControl>
