@@ -6,7 +6,7 @@
              xmlns:viewModels="clr-namespace:Contoso.Samples.ConnectedServices.Authentication.SinglePage.ViewModels"
              d:DataContext="{d:DesignInstance Type=viewModels:AuthenticatorViewModel}"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="64" d:DesignWidth="192">
     <StackPanel>
         <TextBlock>
             <Hyperlink Command="{Binding ChangeAuthentication}">

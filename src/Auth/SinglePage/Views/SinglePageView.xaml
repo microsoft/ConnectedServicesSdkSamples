@@ -6,8 +6,8 @@
              xmlns:viewModels="clr-namespace:Contoso.Samples.ConnectedServices.Authentication.SinglePage.ViewModels"
              d:DataContext="{d:DesignInstance Type=viewModels:SinglePageViewModel}"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
-      <Grid>
+             d:DesignHeight="367" d:DesignWidth="754">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition />

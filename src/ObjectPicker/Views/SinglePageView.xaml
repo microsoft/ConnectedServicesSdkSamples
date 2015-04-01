@@ -9,7 +9,7 @@
              xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
              d:DataContext="{d:DesignInstance Type=viewModels:SinglePageViewModel}"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300"
+             d:DesignHeight="367" d:DesignWidth="754"
              Loaded="UserControl_Loaded">
     <Grid>
         <Grid.RowDefinitions>
