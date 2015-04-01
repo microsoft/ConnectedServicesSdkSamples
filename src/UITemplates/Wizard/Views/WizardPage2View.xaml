@@ -6,7 +6,7 @@
              xmlns:viewModels="clr-namespace:Contoso.Samples.ConnectedServices.UITemplates.Wizard.ViewModels"
              d:DataContext="{d:DesignInstance Type=viewModels:WizardPage2ViewModel}"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignWidth="584" d:DesignHeight="367" >
     <StackPanel Background="Black">
         <Label Foreground="White" HorizontalAlignment="Center" FontSize="24">View: Provider Content Page 2</Label>
         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Foreground="White">Up to the provider to set any content they'd like for service configuration</TextBlock>
