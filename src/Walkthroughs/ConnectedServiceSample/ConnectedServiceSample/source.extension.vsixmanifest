@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="ConnectedServiceSample.Steve Lasker.2e64e29b-3bf8-40f3-84d3-b67500d0ed78" Version="1.0" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>ConnectedServiceSample</DisplayName>
+    <Description>Empty VSIX Project.</Description>
+    <Icon>Resources\ExtensionIcon.png</Icon>
+    <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency d:Source="Installed" Id="Microsoft.VisualStudio.ConnectedServices" DisplayName="Microsoft Visual Studio Connected Services" Version="[2.0,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+  </Assets>
+</PackageManifest>
