@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.UpdateSupport
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.UpdateSupport",
+        "Microsoft.Samples.UpdateSupport",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

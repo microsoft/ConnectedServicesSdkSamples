@@ -9,7 +9,7 @@ namespace Contoso.Samples.ConnectedServices
     /// A connected service provider that shows how the objects that the user selected within the object picker control can be accessed.
     /// </summary>
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.ObjectPicker",
+        "Microsoft.Samples.ObjectPicker",
         AppliesTo = "CSharp")]
     internal class Hander : ConnectedServiceHandler
     {

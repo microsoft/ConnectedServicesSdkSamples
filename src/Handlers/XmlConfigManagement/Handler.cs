@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.Handlers.XmlConfigManagement
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.XmlConfigManagement",
+        "Microsoft.Samples.XmlConfigManagement",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.Handlers.AddingFiles
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.AddingFiles",
+        "Microsoft.Samples.AddingFiles",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

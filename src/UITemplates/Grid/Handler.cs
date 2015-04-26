@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.UITemplates.Grid
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.GridUITemplate",
+        "Microsoft.Samples.Grid",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

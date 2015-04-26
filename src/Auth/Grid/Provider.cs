@@ -7,18 +7,18 @@ using System.Windows.Media.Imaging;
 
 namespace Contoso.Samples.ConnectedServices.Authentication.Grid
 {
-    [ConnectedServiceProviderExport("Contoso.Samples.GridAuth")]
+    [ConnectedServiceProviderExport("Microsoft.Samples.GridAuth")]
     internal class Provider : ConnectedServiceProvider
     {
         public Provider()
         {
             this.Category = "Contoso";
-            this.Name = "Sample: Grid Auth";
-            this.Description = "Sample Provider with Grid Auth functionality.";
-            this.Icon = new BitmapImage(new Uri("pack://application:,,/" + this.GetType().Assembly.ToString() + ";component/Resources/Icon.png"));
+            this.Name = "Sample Configurator: Grid Auth";
+            this.Description = "Sample Connected Service with Grid Auth functionality.";
+            this.Icon = new BitmapImage(new Uri("pack://application:,,/" + this.GetType().Assembly.ToString() + ";component/Resources/ProviderIcon.png"));
             this.CreatedBy = "Microsoft";
             this.Version = new Version(1, 0, 0);
-            this.MoreInfoUri = new Uri("http://Microsoft.com");
+            this.MoreInfoUri = new Uri("http://aka.ms/ConnectedServicesSDK");
         }
 
         public override IEnumerable<Tuple<string, Uri>> GetSupportedTechnologyLinks()

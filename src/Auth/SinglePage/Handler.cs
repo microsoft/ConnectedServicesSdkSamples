@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.Authentication.SinglePage
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.SinglePageAuth",
+        "Microsoft.Samples.SinglePageAuth",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

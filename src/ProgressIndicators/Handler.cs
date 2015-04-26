@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.ProgressIndicators
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.ProgressIndicators",
+        "Microsoft.Samples.ProgressIndicators",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.UITemplates.SinglePage
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.SinglePageUITemplate",
+        "Microsoft.Samples.SinglePage",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

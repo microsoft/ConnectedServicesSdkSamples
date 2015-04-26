@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 namespace Contoso.Samples.ConnectedServices.Authentication.Grid
 {
     [ConnectedServiceHandlerExport(
-        "Contoso.Samples.GridAuth",
+        "Microsoft.Samples.GridAuth",
         AppliesTo = "CSharp")]
     internal class Handler : ConnectedServiceHandler
     {

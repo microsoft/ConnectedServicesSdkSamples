@@ -106,7 +106,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Icon.png" />
+    <Resource Include="Resources\ProviderIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\AuthenticatorView.xaml">

@@ -124,9 +124,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
+    <Resource Include="Resources\ProviderIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\ExtensionIcon.png">

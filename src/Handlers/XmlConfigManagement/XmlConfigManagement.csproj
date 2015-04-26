@@ -109,7 +109,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Icon.png" />
+    <Resource Include="Resources\ProviderIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\ExtensionIcon.png">

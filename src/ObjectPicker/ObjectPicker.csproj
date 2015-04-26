@@ -109,7 +109,7 @@
   <ItemGroup>
     <Content Include="Resources\ExtensionIcon.png" />
     <Content Include="Resources\ExtensionPreviewImage.png" />
-    <Resource Include="Resources\Icon.png" />
+    <Resource Include="Resources\ProviderIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="Views\ObjectPicker.xaml">
