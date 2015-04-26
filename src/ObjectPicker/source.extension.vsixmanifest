@@ -4,6 +4,7 @@
     <Identity Id="Contoso.Samples.ConnectedServices.ObjectPicker.cf2da55b-6d96-4a30-97e1-c872acc80760" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample ObjectPicker</DisplayName>
     <Description xml:space="preserve">A sample for building a Connected Service Provider that contains an ObjectPicker control.</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>

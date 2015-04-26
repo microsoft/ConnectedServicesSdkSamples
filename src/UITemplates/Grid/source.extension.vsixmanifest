@@ -3,7 +3,8 @@
   <Metadata>
     <Identity Id="Contoso.Samples.ConnectedServices.GridTemplate.e30335d6-f9c7-5d08-b66a-f011f3f18499" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample Grid</DisplayName>
-    <Description xml:space="preserve">A sample for building a Connected Service Provider with the Single Page template</Description>
+    <Description xml:space="preserve">A sample for building a Connected Service with a Grid configuration</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>

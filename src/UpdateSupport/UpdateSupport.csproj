@@ -112,7 +112,9 @@
     <Resource Include="Resources\ProviderIcon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\ExtensionIcon.png" />
+    <Content Include="Resources\ExtensionIcon.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="Resources\ExtensionPreviewImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

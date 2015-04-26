@@ -4,6 +4,7 @@
     <Identity Id="Contoso.Samples.ConnectedServices.UpdateSupport.e50335d6-f9c7-4d08-b66a-f011f3f18422" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample UpdateSupport</DisplayName>
     <Description xml:space="preserve">A sample for building a Connected Service Provider with the Single Page template</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>

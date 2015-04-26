@@ -4,6 +4,7 @@
     <Identity Id="Contoso.Samples.ConnectedServices.SinglePageAuth.032D91A0-623B-4FD6-8558-A93AD5B75110" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample SinglePage Auth</DisplayName>
     <Description xml:space="preserve">A Sample for building a Connected Services Provider using the Single Page Template with Custom Auth</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>

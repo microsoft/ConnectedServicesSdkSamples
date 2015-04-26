@@ -4,6 +4,7 @@
     <Identity Id="Contoso.Samples.ConnectedServices.ProgressIndicator.e50335e6-f8c7-4d08-b66a-f011f3f18422" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample ProgressIndicator</DisplayName>
     <Description xml:space="preserve">A sample for building a Connected Service Provider, implementing Progress Indicators</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>

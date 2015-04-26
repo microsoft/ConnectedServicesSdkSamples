@@ -3,7 +3,8 @@
   <Metadata>
     <Identity Id="Contoso.Samples.ConnectedServices.SinglePageTemplate.e30335d6-f8c7-8d08-c66a-f011f3f19476" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample SinglePage</DisplayName>
-    <Description xml:space="preserve">A sample for building a Connected Service Provider with the Single Page template</Description>
+    <Description xml:space="preserve">A sample for building a Connected Service with a SinglePage configuration</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>

@@ -4,6 +4,7 @@
     <Identity Id="Contoso.Samples.ConnectedServices.XmlConfigManagement.e30335d6-f8c7-4d07-b66b-f011f3f19478" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample Update Xml Config</DisplayName>
     <Description xml:space="preserve">A sample for building a Connected Service Provider, adding/editing the config file</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>

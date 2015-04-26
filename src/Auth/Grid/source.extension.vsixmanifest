@@ -4,6 +4,7 @@
     <Identity Id="Contoso.Samples.ConnectedServices.GridAuth.154df38c-335c-443e-8512-f0d7423fec0e" Version="1.0" Language="en-US" Publisher="Microsoft" />
     <DisplayName>Connected Service Sample Grid Auth</DisplayName>
     <Description xml:space="preserve">Sample Provider using the Grid Template with custom Auth</Description>
+    <MoreInfo>http://aka.ms/ConnectedServicesSDK</MoreInfo>
     <Icon>Resources\ExtensionIcon.png</Icon>
     <PreviewImage>Resources\ExtensionPreviewImage.png</PreviewImage>
     <Tags>Connected Services</Tags>
