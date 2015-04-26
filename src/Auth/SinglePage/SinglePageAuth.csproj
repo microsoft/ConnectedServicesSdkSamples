@@ -122,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\ExtensionIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <Content Include="Resources\ExtensionPreviewImage.png">
