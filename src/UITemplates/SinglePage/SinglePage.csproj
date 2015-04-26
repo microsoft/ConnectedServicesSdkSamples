@@ -118,7 +118,6 @@
     </Content>
     <Content Include="Resources\ExtensionPreviewImage.png">
       <IncludeInVSIX>true</IncludeInVSIX>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\ProviderIcon.png" />
   </ItemGroup>

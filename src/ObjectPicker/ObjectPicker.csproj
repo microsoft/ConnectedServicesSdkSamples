@@ -110,7 +110,9 @@
     <Content Include="Resources\ExtensionIcon.png">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Resources\ExtensionPreviewImage.png" />
+    <Content Include="Resources\ExtensionPreviewImage.png">
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Resource Include="Resources\ProviderIcon.png" />
   </ItemGroup>
   <ItemGroup>
