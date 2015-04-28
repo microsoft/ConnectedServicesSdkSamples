@@ -3,10 +3,7 @@
 
 This repository contains everything you need to get started building a Connected Services extension.
 
-The repository is made up of 2 top-level directories:
-
-* **Externals**.  Contains the latest Connected Services binaries that you can reference, and the
-  latest VSIX installers for both the Connected Services core and the Salesforce extension.
+The repository is made up of 1 top-level directory:
 
 * **src**.  Contains several sample providers for the 3 UI Configurators (SinglePage, Grid & Wizard) as well as Design Time Auth and Handlers for adding files to your project.  You can use these to jumpstart your
   development, or as a reference.
